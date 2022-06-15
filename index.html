@@ -3,53 +3,67 @@
 <head>
 	<title>Personal Website</title>
 	 <!-- for font icons -->
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet"  type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
  
 <body style="margin:0">
 
 <!-- Start Header -->
-<table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#f3971b">
-  <tr>
-  	 <td>
-  	 	<table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
-           <tr>
-           	   <td>
-           	   	  <font face="arial" color="black" size="5">
-           	       <strong>Teuku Ardhi</strong>
-           	      </font>
-           	   </td>
-           	   <td width="30%">&nbsp;</td>
-           	   <td><a href="#home">
-           	   	  <font face="arial" color="#ffffff" size="4">
-           	       Home
-           	     </font></a>
-           	   </td>
-           	   <td><a href="#about">
-           	   	  	 <font face="arial" color="#ffffff" size="4">
-           	         About
-           	        </font></a>
-           	    </td>
-           	   <td><a href="#services">
-           	   	<font face="arial" color="#ffffff" size="4">
-           	    	Skills
-           	    </font></a>
-           	   </td>
-           	   <td><a href="#portfolio">
-           	   	 <font face="arial" color="#ffffff" size="4">
-           	      Portfolio
-           	  </font></a>
-           	  </td>
-           	   <td><a href="#contact">
-           	   	<font face="arial" color="#ffffff" size="4">
-           	   Contact
-           	    </font></a>
-           	   </td>
-           </tr>
-  	 	</table>
-  	 </td>
-  </tr>
-</table>
+<div class="header" id="fixHead">
+    <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#f3971b">
+      <tr>
+           <td>
+               <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+               <tr>
+                      <td>
+                            <font face="arial" color="black" size="5">
+                          <strong>Teuku Ardhi</strong>
+                         </font>
+                      </td>
+                      <td width="30%">&nbsp;</td>
+                      <td><a href="#home">
+                            <font face="arial" color="#ffffff" size="4">
+                          Home
+                        </font></a>
+                      </td>
+                      <td><a href="#about">
+                                 <font face="arial" color="#ffffff" size="4">
+                            About
+                           </font></a>
+                       </td>
+                      <td><a href="#services">
+                          <font face="arial" color="#ffffff" size="4">
+                           Skills
+                       </font></a>
+                      </td>
+                      <td><a href="#portfolio">
+                           <font face="arial" color="#ffffff" size="4">
+                         Portfolio
+                     </font></a>
+                     </td>
+                      <td><a href="#contact">
+                          <font face="arial" color="#ffffff" size="4">
+                      Contact
+                       </font></a>
+                      </td>
+               </tr>
+               </table>
+           </td>
+      </tr>
+      <style>
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%
+          }
+        
+          .sticky + .content {
+            padding-top: 102px;
+          }
+      </style>
+      <script src="script.js"></script>
+    </table>
+</div>
 <!-- End Header -->
 
 
@@ -663,88 +677,92 @@
 <!-- Start Contact -->
 
 <table border="0" id="contact" width="100%" cellpadding="0" cellspacing="0" bgcolor="#292929">
-  <tr>
-  	 <td>
-  	 	<table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
-  	 	<!-- Heading Start-->
+    <tr>
+         <td>
+             <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+             <!-- Heading Start-->
+            <tr>
+                   <td height="160" align="center" valign="middle">
+                        <font face="arial" size="6" color=" #f3971b">
+                          Contact
+                       </font>
+                       <hr width="70" color="#f3971b">
+                   </td>
+            </tr>
+          <!-- Heading  End-->
           <tr>
-           	  <td height="160" align="center" valign="middle">
-           	  	 <font face="arial" size="6" color=" #f3971b">
-           	  	   Contact (Belom Bisa karena belom belajar PHP)
-           	  	</font>
-           	  	<hr width="70" color="#f3971b">
-           	  </td>
+              <td align="center" valign="top">
+                <table border="0" width="55%" cellpadding="20" cellspacing="0" align="center" bgcolor="#353535">
+                    <tr>
+                        <td>
+                 <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center" bgcolor="#353535">
+                   <tr>
+                       <td width="100%">
+                           <font face="arial" size="4" color="#ffffff">
+                            Name
+                           </font>
+                           
+                      </td>
+                      <td width="70%">
+                          <input type="text" size="50">
+                      </td>
+                   </tr>
+                   <tr>
+                       <td width="30%">
+                           <font face="arial" size="4" color="#ffffff">
+                            Email
+                           </font>
+                           
+                      </td>
+                      <td width="70%">
+                          <input type="text" size="50">
+                      </td>
+                   </tr>
+                   <tr>
+                       <td width="30%">
+                           <font face="arial" size="4" color="#ffffff">
+                            Subject
+                           </font>
+                           
+                      </td>
+                      <td width="70%">
+                          <input type="text" size="50">
+                      </td>
+                   </tr>
+  
+                   <tr>
+                       <td width="30%">
+                           <font face="arial" size="4" color="#ffffff">
+                            Message
+                           </font>
+                           
+                      </td>
+                      <td width="70%">
+                          <textarea cols="51" rows="4"></textarea>
+                      </td>
+                   </tr>
+                   <tr>
+                       <td width="30%">
+                           &nbsp;
+                      </td>
+                      <td width="70%">
+                          
+                              <button id="pencet" type="submit" style="background-color: #f3971b;">
+                              <font size="5" face ="rebuchet MS (sans-serif)">Send Message</font>
+                              </button>
+                              
+                              <script>
+                                  document.getElementById("pencet").addEventListener("click",function (){
+                                      alert("Sorry you can't send message yet.")
+                                  })
+                              </script> 
+                      </td>
+                   </tr>
+  
+                 </table>
+              </td>
           </tr>
-        <!-- Heading  End-->
-        <tr>
-        	<td align="center" valign="top">
-        	  <table border="0" width="55%" cellpadding="20" cellspacing="0" align="center" bgcolor="#353535">
-        	  	<tr>
-        	  		<td>
-        	   <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center" bgcolor="#353535">
-        		 <tr>
-        		 	<td width="100%">
-        		 		<font face="arial" size="4" color="#ffffff">
-        		 	     Name
-        		 	    </font>
-        		 	    
-        		    </td>
-        		    <td width="70%">
-        		    	<input type="text" size="50">
-        		    </td>
-        		 </tr>
-        		 <tr>
-        		 	<td width="30%">
-        		 		<font face="arial" size="4" color="#ffffff">
-        		 	     Email
-        		 	    </font>
-        		 	    
-        		    </td>
-        		    <td width="70%">
-        		    	<input type="text" size="50">
-        		    </td>
-        		 </tr>
-        		 <tr>
-        		 	<td width="30%">
-        		 		<font face="arial" size="4" color="#ffffff">
-        		 	     Subject
-        		 	    </font>
-        		 	    
-        		    </td>
-        		    <td width="70%">
-        		    	<input type="text" size="50">
-        		    </td>
-        		 </tr>
-
-        		 <tr>
-        		 	<td width="30%">
-        		 		<font face="arial" size="4" color="#ffffff">
-        		 	     Message
-        		 	    </font>
-        		 	    
-        		    </td>
-        		    <td width="70%">
-        		    	<textarea cols="51" rows="4"></textarea>
-        		    </td>
-        		 </tr>
-        		 <tr>
-        		 	<td width="30%">
-        		 		&nbsp;
-        		    </td>
-        		    <td width="70%">
-        		    	
-        		    		<button type="submit">
-        		    		<font size="5" face="arial">Send Message</font>
-        		    		</button>
-        		    	
-        		    </td>
-
-        		 </tr>
-
-        	   </table>
-        	</td>
-        </tr>
-    </table>
+      </table>
         	</td>
         </tr>
         <!-- section padding bottom -->
